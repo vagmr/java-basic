@@ -1,6 +1,8 @@
 package src.HouseRental.View;
 
 
+import src.HouseRental.Model.HouseInformation;
+import src.HouseRental.Servicce.HouseService;
 import src.HouseRental.utils.Utils;
 
 public class HouseView {
@@ -8,6 +10,15 @@ public class HouseView {
 
     boolean opt = true;
     char choice;
+    private HouseService hv = new HouseService(10);
+    public  void houseList(){
+        System.out.println("---------------房屋列表----------------");
+        System.out.println("编号\t\t房主\t\t\t电话\t\t\t地址\t\t租金\t\t状态");
+        HouseInformation[] Houses = hv.list();
+        for (int i = 0; i <Houses.length ; i++) {
+            System.out.println(Houses[i]);
+        }
+    }
 
     public void mainMenu() {
         do {
