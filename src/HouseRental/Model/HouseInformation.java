@@ -2,6 +2,7 @@ package src.HouseRental.Model;
 
 /**
  * HouseInformation的属性表示房屋的信息
+ *
  * @author xgao
  * @version 0.01
  */
@@ -74,15 +75,12 @@ public class HouseInformation {
         System.out.println("调用无参构造器");
     }
 
+    //为了实现更好的输出,编写一个toString方法
     @Override
     public String toString() {
-        return "HouseInformation{" +
-                "id=" + id +
-                ", houseMaster='" + houseMaster + '\'' +
-                ", tel='" + tel + '\'' +
-                ", address='" + address + '\'' +
-                ", rent=" + rent +
-                ", state='" + state + '\'' +
-                '}';
+        return "id" + "\t" + "houseMaster" + "\t" + "tel" +
+                "\t" + "address" + "\t" + "rent" + "   " + "state"
+                + "\n" + id + "\t\t " + houseMaster + "\t\t " + tel +
+                "\t" + address + "\t" + rent + "\t" + state;
     }
 }
