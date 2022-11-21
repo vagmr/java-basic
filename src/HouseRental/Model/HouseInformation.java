@@ -76,11 +76,14 @@ public class HouseInformation {
     }
 
     //为了实现更好的输出,编写一个toString方法
+
     @Override
     public String toString() {
-        return "id" + "\t" + "houseMaster" + "\t" + "tel" +
-                "\t" + "address" + "\t" + "rent" + "   " + "state"
-                + "\n" + id + "\t\t " + houseMaster + "\t\t " + tel +
-                "\t" + address + "\t" + rent + "\t" + state;
+        return  id +
+                "\t\t" + houseMaster +
+                "\t  " + tel +
+                "\t\t" + address +
+                "\t" + rent +
+                "\t" + state;
     }
 }
