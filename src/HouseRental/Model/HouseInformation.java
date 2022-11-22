@@ -81,8 +81,8 @@ public class HouseInformation {
     public String toString() {
         return  id +
                 "\t\t" + houseMaster +
-                "\t  " + tel +
-                "\t\t" + address +
+                "\t\t" + tel +
+                "\t" + address +
                 "\t" + rent +
                 "\t" + state;
     }
