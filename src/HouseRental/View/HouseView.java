@@ -12,7 +12,11 @@ public class HouseView {
 
     boolean opt = true;
     char choice;
-    public int size = 2;
+    public int size = 1;
+//    private boolean conslution = false;
+//    public boolean getconslution(){
+//        return conslution;
+//    }
     private HouseService hv = new HouseService(size);
 
 
@@ -34,13 +38,19 @@ public class HouseView {
             System.out.println("新增房屋成功");
         } else {
             System.out.println("新增房屋失败");
+//            if(hv.add()) {
+//                conslution = true;
+//            }
         }
     }
     public  void houseList(){
         System.out.println("---------------房屋列表----------------");
         System.out.println("编号\t\t房主\t\t\t电话\t\t\t地址\t\t租金\t\t状态");
         HouseInformation[] Houses = hv.list();
-        Houses = hv.housesPlus(Houses);
+        HousePrint(Houses);
+    }
+    public void HousePrint(HouseInformation[] Houses){
+
         for (int i = 0; i <Houses.length ; i++) {
             if(Houses[i] == null){
                 System.out.println("\n--------------房屋列表显示完毕-----------\n");
@@ -48,6 +58,7 @@ public class HouseView {
             }
             System.out.println(Houses[i]);
         }
+
     }
 
     public void mainMenu() {
