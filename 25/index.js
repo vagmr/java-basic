@@ -4,3 +4,4 @@ if j >= 150;
 var n1 = a + b
 document.write(i);
 document.write("a+b=" + n1 + "<br/>");
+document.write(fuck);

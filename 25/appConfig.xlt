@@ -1,11 +1,11 @@
 {
-	"appName": "一个垃圾软件",
-	"appPackageName": "top.webcat.app114349",
+	"appName": "软件",
+	"appPackageName": "com.xgao.vagmr",
 	"appVersionName": "1.2",
 	"appVersionCode": 100000,
 	"data": {		
 		"启用顶栏": true,
-		"顶栏标题": "一个垃圾软件",
+		"顶栏标题": "一个非常简单的软件",
 		"顶栏颜色": "#ff00ffe8",
 		"横屏": false,
 		"显示状态栏": true,
