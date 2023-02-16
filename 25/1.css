@@ -1,0 +1,36 @@
+h1{
+  font-family:Arial,Verdana,Georgia;
+  font-size:200px;
+  font-weight:bolder;
+  color:red;
+  text-align:center;
+  text-decoration:underline;
+} 
+p{ 
+  font-family:Verdana;
+  font-size:100px ;
+  font-weight:bold;
+  color:blue;
+  text-align:center;
+} 
+
+#a1{
+background-color:yellow;
+    }
+#v1{
+  font-family:Verdana;
+  font-size:150px;
+  font-weight:bolder;
+  color:blue;
+  text-align:center;
+ }
+div{
+  width:1250px;
+  height:2000px;
+  border:5px solid silver;
+  background-image:url(30.jpg);
+  background-repeat:repeat
+   }
+  
+  
+
